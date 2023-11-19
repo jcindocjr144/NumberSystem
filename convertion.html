@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="CSS/convert.css">
 </head>
 <body>
-  <h1 class="num mt-5 text-center text-warning">NUMBER SYSTEM CONVERTION</h1>
+   <h1 class="num mt-5 text-center text-warning">NUMBER SYSTEM CONVERTION</h1>
   <div class="container mt-5">
     <div class="row text-center text-dark">
 <!---Binary-->
@@ -77,6 +77,7 @@
          </div></div></div>
     </div>
   </div>
+
 <!---Binary to decimal-->
   <div class="text-white d-flex align-items-center justify-content-center">
 <div id="bintodeci" class="mt-5 text-center" style="display:none;">
@@ -95,16 +96,17 @@
     <button onclick="convertBintoOctal()" class="rounded-2 text-dark">Convert</button>
     <p class="bg-dark">Octal Decimal: <span style="font-size:20px;" id="octa"></span></p>
   </div>
-  <div id="bintohexa" class="mt-5 text-center" style="display:none;">
 
 <!---Binary to Hexa decimal-->
+  <div id="bintohexa" class="mt-5 text-center" style="display:none;">
     <h1>Binary to Hexa Decimal</h1>
     <label for="hexaInput">Binary: </label>
     <input type="text" id="hexaInput" class="rounded-2 text-dark" placeholder="0">
     <button onclick="convertBintoHexa()" class="rounded-2 text-dark">Convert</button>
     <p class="bg-dark">Hexa Decimal: <span style="font-size:20px;" id="hexa"></span></p>
   </div>
-  <!---Decimal to Binary-->
+  
+<!---Decimal to Binary-->
   <div id="decitobin" class="mt-5 text-center" style="display:none;">
     <h1>Decimal to Binary</h1>
     <label for="decimalInput">Decimal:</label>
@@ -112,24 +114,23 @@
     <button onclick="convertDecitoBin()" class="rounded-2 text-dark">Convert</button>
     <p class="bg-dark">Binary: <span style="font-size:20px;" id="decitobinary"></span></p>
   </div>
-  <div id="decitooctal" class="mt-5 text-center" style="display:none;">
 
 <!---Decimal to Octal-->
+  <div id="decitooctal" class="mt-5 text-center" style="display:none;">
 <h1>Decimal to Octal Decimal</h1>
 <label for="decitooctalInput">Decimal:</label>
 <input type="text" id="decitooctalInput" class="rounded-2 text-dark" placeholder="0">
 <button onclick="decitooct()" class="rounded-2 text-dark">Convert</button>
 <p class="bg-dark">Octal: <span span style="font-size:20px;" id="octalOutput"></span></p>
 </div>
-<div id="decitohexa" class="mt-5 text-center" style="display:none;">
 
 <!---Decimal to Hexa Decimal-->
+<div id="decitohexa" class="mt-5 text-center" style="display:none;">
 <h1>Decimal to Hexa Decimal</h1>
 <label for="hexatodeciInput">Decimal: </label>
 <input type="text" id="hexatodeciInput" class="rounded-2 text-dark" placeholder="0">
 <button onclick="convertDecitoHexa()"  class="rounded-2 text-dark">Convert</button>
 <p class="bg-dark">Hexadecimal: <span span style="font-size:20px;"id="hexaOutput"></span></p>
-</div>
 </div>
 
 <!---Octal to bin-->
@@ -170,6 +171,5 @@
 </div>
 <footer class="footer fixed-bottom text-end">
   <h3>J.J.K₂₀₂₃</h3>
-</footer>
 </body>
 </html>
