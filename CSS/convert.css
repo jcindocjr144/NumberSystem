@@ -39,7 +39,7 @@ body
 }
 
 .hexa{
-    background-image:url(IMAGES/hexa.gif);
+    background-image:URL(../IMAGES/hexa.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
