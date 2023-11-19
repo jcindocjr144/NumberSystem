@@ -56,3 +56,7 @@ button{
 {
     text-shadow: 4px 2px red;
 }
+.footer{
+    background-color: wheat;
+    font-family:monospace;
+}
