@@ -15,21 +15,21 @@ body
     100%{text-shadow: 3px 3px RED;}
 }
 .binary{
-    background-image:url(IMAGES/binary.gif);
+    background-image:URL(../IMAGES/binary.gif);
     border:3px solid BLACK;
     box-shadow: 0 0 10px RED, 0 0 30px BLUE;
     font-size: 3rem;
     height:16rem;
 }
 .decimal{
-    background-image:url(IMAGES/decimal.gif);
+    background-image:URL(../IMAGES/decimal.gif);
     border:3px solid BLACK;
     box-shadow: 0 0 10px RED, 0 0 30px BLUE;
     font-size: 3rem;
     height:16rem;
 }
 .octal{
-    background-image:url(IMAGES/octal.gif);
+    background-image:URL(../IMAGES/octal.gif);
     background-position: center;
     background-size: 50%;
     border:3px solid BLACK;
