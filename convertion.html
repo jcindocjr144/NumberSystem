@@ -133,7 +133,7 @@
 </div>
 </div>
 
-<!---Decimal to Octal Decimal-->
+<!---Octal to bin-->
 <div id="octaltobin" class="mt-5 text-center" style="display:none;">
   <h1>Octal to Binary</h1>
   <label for="octaltobinaryInput">Octal: </label>
@@ -142,7 +142,7 @@
   <p class="bg-dark">Binary:<span span style="font-size:20px;" id="octaltobinaryOutput"></span></p>
   </div>
 
-  <!---Decimal to Octal Decimal-->
+<!---Octal to Decimal-->
 <div id="octaltodeci" class="mt-5 text-center" style="display:none;">
   <h1>Octal to Decimal</h1>
   <label for="octaltodeciInput">Octal: </label>
@@ -151,13 +151,22 @@
   <p class="bg-dark">Decimal: <span span style="font-size:20px;" id="octaltodeciOutput"></span></p>
   </div>
 
-  <!---Decimal to Hexa Decimal-->
+<!---Octal to Hexa Decimal-->
   <div id="octaltohex" class="mt-5 text-center" style="display:none;">
     <h1>Octal to Hexa Decimal</h1>
     <label for="octaltohexaInput">Octal: </label>
     <input type="text" id="octaltohexaInput" class="rounded-2 text-dark" placeholder="0">
     <button onclick="convertOctalToHexa()" class="rounded-2 text-dark">Convert</button>
     <p class="bg-dark">Hexa Decimal: <span span style="font-size:20px;" id="octaltohexaOutput"></span></p>
+    </div>
+
+<!---Hexa Decimal to Binary-->
+   <div id="hexatobin" class="mt-5 text-center">
+    <h1>Hexadecimal to Binary</h1>
+<label for="hexatobinInput">Hexadecimal: </label>
+<input type="text" id="hexatobinInput"  class="rounded-2 text-dark" placeholder="0">
+<button onclick="convertHexToBinary()" class="rounded-2 text-dark">Convert</button>
+<p class="bg-dark">Binary: <span span style="font-size:20px;" id="hexatobinOutput"></span></p>
     </div>
 </div>
 <footer class="footer fixed-bottom text-end">
