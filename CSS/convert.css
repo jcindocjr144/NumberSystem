@@ -37,6 +37,17 @@ body
     font-size: 3rem;
     height:16rem;
 }
+
+.hexa{
+    background-image:url(IMAGES/hexa.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border:3px solid BLACK;
+    box-shadow: 0 0 10px RED, 0 0 30px BLUE;
+    font-size: 3rem;
+    height:16rem;
+}
 .box
 {
     background-color: WHITE;
