@@ -346,3 +346,19 @@ function hexatooctal(){
     document.getElementById("hexatobin").style.display="none";
     document.getElementById("hexatodeci").style.display="none";
 }
+
+function clearAll()
+{
+    document.getElementById("bintodeci").style.display="none";
+    document.getElementById("bintooctal").style.display="none";
+    document.getElementById("bintohexa").style.display="none";
+    document.getElementById("decitobin").style.display="none";
+    document.getElementById("decitohexa").style.display="none";
+    document.getElementById("decitooctal").style.display="none";
+    document.getElementById("octaltobin").style.display="none";
+    document.getElementById("octaltodeci").style.display="none";
+    document.getElementById("octaltohex").style.display="none";
+    document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
+}
