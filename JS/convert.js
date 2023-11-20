@@ -84,12 +84,12 @@ function decitooct() {
 }
 
 function convertDecitoHexa(){
-    var hexatodeciInput = document.getElementById("hexatodeciInput").value;
-    if (hexatodeciInput === "" || isNaN(hexatodeciInput)) {
+    var decitohexaInput = document.getElementById("decitohexaInput").value;
+    if ( decitohexaInput === "" || isNaN(decitohexaInput)) {
         return;
     }
-    var hexatodecimal = decimalToHex(parseInt(hexatodeciInput, 10));
-    document.getElementById("hexaOutput").textContent =  hexatodecimal  + "₁₆";
+    var decitohexa = decimalToHex(parseInt(decitohexaInput, 10));
+    document.getElementById("hexaOutput").textContent =  decitohexa  + "₁₆";
 }
 //Octal to Binary
 function convertOctaltoBin() {
@@ -128,6 +128,7 @@ function convertOctalToHexa() {
     var hexadecimalResult = decimalResult.toString(16).toUpperCase();
     document.getElementById("octaltohexaOutput").innerText =hexadecimalResult   + "₁₆";
 }
+//Hexa Decimal to Binary 
 function convertHexToBinary() {
     var hexatobinInput = document.getElementById("hexatobinInput").value;
 
@@ -138,6 +139,20 @@ function convertHexToBinary() {
     var decimalResult = parseInt(hexatobinInput, 16);
     var binaryResult = decimalResult.toString(2);
     document.getElementById("hexatobinOutput").innerText = "Binary: " + binaryResult  + "₂";
+}
+//Hexa Decimal to Decimal
+function convertHexaToDecimal() {
+    var hexatodeciInput = document.getElementById("hexatodeciInput").value;
+    var hexatodeciResult = parseInt(hexatodeciInput, 16);
+    document.getElementById("hexatodeciOutput").innerHTML =  hexatodeciResult  + "₁₀";
+}
+
+
+function convertHexaToOctal() {
+    var hexatooctalInput = document.getElementById("hexatooctalInput").value;
+    var hexatooctalResult = parseInt(hexatooctalInput, 16);
+    var octalResult = hexatooctalResult.toString(8);
+    document.getElementById("hexatooctalOutput").innerHTML = + octalResult  + "₈";
 }
 function bintodecimal(){
     document.getElementById("bintodeci").style.display="block";
@@ -152,6 +167,8 @@ function bintodecimal(){
     document.getElementById("octaltodeci").style.display="none";
     document.getElementById("octaltohex").style.display="none";
     document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
 }
 function bintooctal(){
     document.getElementById("bintooctal").style.display="block";
@@ -166,6 +183,8 @@ function bintooctal(){
     document.getElementById("octaltodeci").style.display="none";
     document.getElementById("octaltohex").style.display="none";
     document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
 }
 function bintohexa(){
     document.getElementById("bintohexa").style.display="block";
@@ -180,6 +199,8 @@ function bintohexa(){
     document.getElementById("octaltodeci").style.display="none";
     document.getElementById("octaltohex").style.display="none";
     document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
 }
 function decitobinary(){
     document.getElementById("decitobin").style.display="block";
@@ -194,6 +215,8 @@ function decitobinary(){
     document.getElementById("octaltodeci").style.display="none";
     document.getElementById("octaltohex").style.display="none";
     document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
 }
 function decitooctal(){
     document.getElementById("decitooctal").style.display="block";
@@ -208,6 +231,8 @@ function decitooctal(){
     document.getElementById("octaltodeci").style.display="none";
     document.getElementById("octaltohex").style.display="none";
     document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
 }
 function decitohexa(){
     document.getElementById("decitohexa").style.display="block";
@@ -222,6 +247,8 @@ function decitohexa(){
     document.getElementById("octaltodeci").style.display="none";
     document.getElementById("octaltohex").style.display="none";
     document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
 }
 function octaltobinary(){
     document.getElementById("octaltobin").style.display="block";
@@ -236,6 +263,8 @@ function octaltobinary(){
     document.getElementById("octaltodeci").style.display="none";
     document.getElementById("octaltohex").style.display="none";
     document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
 }
 function octaltodecimal(){
     document.getElementById("octaltodeci").style.display="block";
@@ -250,6 +279,8 @@ function octaltodecimal(){
     document.getElementById("octaltobin").style.display="none";
     document.getElementById("octaltohex").style.display="none";
     document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
 }
 function octaltohexa(){
     document.getElementById("octaltohex").style.display="block";
@@ -264,6 +295,8 @@ function octaltohexa(){
     document.getElementById("octaltobin").style.display="none";
     document.getElementById("octaltodeci").style.display="none";
     document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
 }
 function hexatobinary(){
     document.getElementById("hexatobin").style.display="block";
@@ -278,4 +311,38 @@ function hexatobinary(){
     document.getElementById("octaltobin").style.display="none";
     document.getElementById("octaltodeci").style.display="none";
     document.getElementById("octaltohex").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
+}
+function hexatodecimal(){
+    document.getElementById("hexatodeci").style.display="block";
+    document.getElementById("hexatodeciInput").value = "";
+    document.getElementById("hexatodeciOutput").innerHTML = "";
+    document.getElementById("bintodeci").style.display="none";
+    document.getElementById("bintooctal").style.display="none";
+    document.getElementById("bintohexa").style.display="none";
+    document.getElementById("decitobin").style.display="none";
+    document.getElementById("decitohexa").style.display="none";
+    document.getElementById("decitooctal").style.display="none";
+    document.getElementById("octaltobin").style.display="none";
+    document.getElementById("octaltodeci").style.display="none";
+    document.getElementById("octaltohex").style.display="none";
+    document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatooct").style.display="none";
+}
+function hexatooctal(){
+    document.getElementById("hexatooct").style.display="block";
+    document.getElementById("hexatooctalInput").value = "";
+    document.getElementById("hexatooctalOutput").innerHTML = "";
+    document.getElementById("bintodeci").style.display="none";
+    document.getElementById("bintooctal").style.display="none";
+    document.getElementById("bintohexa").style.display="none";
+    document.getElementById("decitobin").style.display="none";
+    document.getElementById("decitohexa").style.display="none";
+    document.getElementById("decitooctal").style.display="none";
+    document.getElementById("octaltobin").style.display="none";
+    document.getElementById("octaltodeci").style.display="none";
+    document.getElementById("octaltohex").style.display="none";
+    document.getElementById("hexatobin").style.display="none";
+    document.getElementById("hexatodeci").style.display="none";
 }
