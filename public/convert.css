@@ -1,0 +1,72 @@
+body
+{
+    background-color:#a59d9d;
+}
+.num{
+    font-size: 60px;
+    animation: anima 4s infinite;
+}
+@keyframes anima
+{
+    0%{text-shadow: 3px 3px RED;}
+    25%{text-shadow: 2px 2px BLUE;}
+    50%{text-shadow: 3px 3px RED;}
+    75%{text-shadow: 2px 2px BLUE;}
+    100%{text-shadow: 3px 3px RED;}
+}
+.binary{
+    background-image:url(IMAGES/binary.gif);
+    border:3px solid BLACK;
+    box-shadow: 0 0 10px RED, 0 0 30px BLUE;
+    font-size: 3rem;
+    height:16rem;
+}
+.decimal{
+    background-image:url(IMAGES/decimal.gif);
+    border:3px solid BLACK;
+    box-shadow: 0 0 10px RED, 0 0 30px BLUE;
+    font-size: 3rem;
+    height:16rem;
+}
+.octal{
+    background-image:url(IMAGES/octal.gif);
+    background-position: center;
+    background-size: 50%;
+    border:3px solid BLACK;
+    box-shadow: 0 0 10px RED, 0 0 30px BLUE;
+    font-size: 3rem;
+    height:16rem;
+}
+.hexa{
+    background-image:url(IMAGES/hexa.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:3px solid BLACK;
+    box-shadow: 0 0 10px RED, 0 0 30px BLUE;
+    font-size: 3rem;
+    height:16rem;
+}
+.box
+{
+    background-color: WHITE;
+    border:3px solid BLACK;
+    box-shadow: 0 0 10px RED, 0 0 30px BLUE;
+    font-size: 3rem;
+    height:16rem;
+}
+button{
+    width:150px;
+}
+.whole
+{
+    background: WHITE;
+}
+.text
+{
+    text-shadow: 4px 2px red;
+}
+.footer{
+    background-color: wheat;
+    font-family:monospace;
+}
